@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:libraryapp/models/book.dart';
 
 class AchivementItem extends StatefulWidget {
-  final int? number;
+  final Book book;
 
-  const AchivementItem({
+  const AchivementItem(
+    this.book, {
     Key? key,
-    this.number,
   }) : super(key: key);
 
   @override
@@ -14,23 +14,17 @@ class AchivementItem extends StatefulWidget {
 }
 
 class _AchivementItemState extends State<AchivementItem> {
-  final Book achivementBook = Book(
-    bookNumber: 1,
-    bookColor: Colors.purple,
-    bookName: 'Livro vermelho',
-  );
-
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Icon(
           Icons.circle,
-          color: achivementBook.bookColor,
+          color: widget.book.bookColor,
         ),
-        Text(widget.number.toString()),
+        Text(widget.book.bookNumber.toString()),
         Text(' - '),
-        Text(achivementBook.bookName!),
+        Text(widget.book.bookName!),
       ],
     );
   }
