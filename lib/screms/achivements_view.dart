@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:libraryapp/controller/controller_achivement.dart';
 import 'package:libraryapp/models/book.dart';
 import 'package:libraryapp/wedgets/achivement_item.dart';
 
@@ -10,11 +11,7 @@ class AchivementsView extends StatefulWidget {
 }
 
 class _AchivementsViewState extends State<AchivementsView> {
-  final Book achivementBook = Book(
-    bookNumber: 1,
-    bookColor: Colors.red,
-    bookName: 'Livro vermelho',
-  );
+  List<Book> allBooks = ControllerAchitvement().getSistBuooks()!;
 
   @override
   Widget build(BuildContext context) {
@@ -22,17 +19,24 @@ class _AchivementsViewState extends State<AchivementsView> {
       appBar: AppBar(
         title: Text('Conquistas'),
       ),
-      body: Column(
+      body: ListView.builder(
+          itemCount: allBooks.length,
+          itemBuilder: (context, index) {
+            return AchivementItem(allBooks[index]);
+          }),
+      /*
+      Column(
         children: [
-          AchivementItem(achivementBook),
-          AchivementItem(achivementBook),
-          AchivementItem(achivementBook),
-          AchivementItem(achivementBook),
+          AchivementItem(allBooks[0]),
+          AchivementItem(allBooks[1]),
+          AchivementItem(allBooks[2]),
+          AchivementItem(allBooks[3]),
+          AchivementItem(allBooks[4]),
           Center(
             child: CircularProgressIndicator(),
           ),
         ],
-      ),
+      ),*/
     );
   }
 }

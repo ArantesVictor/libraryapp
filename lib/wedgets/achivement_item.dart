@@ -25,10 +25,11 @@ class _AchivementItemState extends State<AchivementItem> {
         Text(widget.book.bookNumber.toString()),
         Text(' - '),
         Text(widget.book.bookName!),
-        Icon(
-          Icons.book_online_rounded,
-          color: widget.book.bookColor,
-        ),
+        if (widget.book.bookRead!)
+          Icon(
+            Icons.book_online_rounded,
+            color: Colors.orange,
+          ),
       ],
     );
   }
