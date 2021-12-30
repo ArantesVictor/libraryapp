@@ -24,19 +24,6 @@ class _AchivementsViewState extends State<AchivementsView> {
           itemBuilder: (context, index) {
             return AchivementItem(allBooks[index]);
           }),
-      /*
-      Column(
-        children: [
-          AchivementItem(allBooks[0]),
-          AchivementItem(allBooks[1]),
-          AchivementItem(allBooks[2]),
-          AchivementItem(allBooks[3]),
-          AchivementItem(allBooks[4]),
-          Center(
-            child: CircularProgressIndicator(),
-          ),
-        ],
-      ),*/
     );
   }
 }

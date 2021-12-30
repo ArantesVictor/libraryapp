@@ -16,20 +16,29 @@ class AchivementItem extends StatefulWidget {
 class _AchivementItemState extends State<AchivementItem> {
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       children: [
-        Icon(
-          Icons.circle,
-          color: widget.book.bookColor,
-        ),
-        Text(widget.book.bookNumber.toString()),
-        Text(' - '),
-        Text(widget.book.bookName!),
         if (widget.book.bookRead!)
-          Icon(
-            Icons.book_online_rounded,
-            color: Colors.orange,
-          ),
+          Container(
+              child: ListTile(
+            leading: Icon(Icons.circle),
+            iconColor: widget.book.bookColor,
+            title: Text(widget.book.bookNumber.toString() +
+                " - " +
+                widget.book.bookName!),
+            enabled: true,
+            trailing: Icon(Icons.check),
+          )),
+        if (!widget.book.bookRead!)
+          Container(
+              child: ListTile(
+            leading: Icon(Icons.circle),
+            iconColor: widget.book.bookColor,
+            title: Text(widget.book.bookNumber.toString() +
+                " - " +
+                widget.book.bookName!),
+            enabled: true,
+          )),
       ],
     );
   }
