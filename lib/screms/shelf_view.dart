@@ -27,7 +27,12 @@ class _ShelfViewState extends State<ShelfView> {
       ),
       body: Container(
         child: Center(
-          child: CircularProgressIndicator(),
+          child: ElevatedButton(
+            child: Text('Entre na Biblioteca'),
+            onPressed: () {
+              Navigator.of(context).pushNamed(AppRoutes.LIBARY);
+            },
+          ),
         ),
       ),
     );
