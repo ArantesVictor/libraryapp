@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:libraryapp/controller/util_controller.dart';
 import 'package:libraryapp/models/book.dart';
 
 class LiberyItem extends StatefulWidget {
@@ -18,11 +19,15 @@ class _LiberyItemState extends State<LiberyItem> {
     return Container(
       height: 150,
       width: 150,
-      color: widget.book.bookColor,
+      color: UtilController().getColor(color: widget.book.bookColor),
       child: Center(
-        child: Text(
-          widget.book.bookNumber.toString(),
-          style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 2.0),
+        child: TextButton(
+          child: Text(
+            widget.book.bookNumber!,
+            style:
+                DefaultTextStyle.of(context).style.apply(fontSizeFactor: 2.0),
+          ),
+          onPressed: () {},
         ),
       ),
     );

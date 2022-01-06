@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:libraryapp/controller/util_controller.dart';
 import 'package:libraryapp/models/book.dart';
 
 class AchivementItem extends StatefulWidget {
@@ -22,10 +23,9 @@ class _AchivementItemState extends State<AchivementItem> {
           Container(
               child: ListTile(
             leading: Icon(Icons.circle),
-            iconColor: widget.book.bookColor,
-            title: Text(widget.book.bookNumber.toString() +
-                " - " +
-                widget.book.bookName!),
+            iconColor: UtilController().getColor(color: widget.book.bookColor),
+            title:
+                Text(widget.book.bookNumber! + " - " + widget.book.bookName!),
             enabled: true,
             trailing: Icon(Icons.check),
           )),
@@ -33,10 +33,9 @@ class _AchivementItemState extends State<AchivementItem> {
           Container(
               child: ListTile(
             leading: Icon(Icons.circle),
-            iconColor: widget.book.bookColor,
-            title: Text(widget.book.bookNumber.toString() +
-                " - " +
-                widget.book.bookName!),
+            iconColor: UtilController().getColor(color: widget.book.bookColor),
+            title:
+                Text(widget.book.bookNumber! + " - " + widget.book.bookName!),
             enabled: true,
           )),
       ],

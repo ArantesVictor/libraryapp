@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Book {
-  int? bookNumber;
-  Color? bookColor;
+  String? bookNumber;
+  String? bookColor;
   String? bookName;
   bool? bookRead;
   bool? bookOpen;

@@ -19,8 +19,9 @@ class ControllerAchitvement {
 
   getListBuooksBrown() {
     List<Book> _books = [];
+
     items.forEach((element) {
-      if (element.bookColor == Colors.brown) {
+      if (element.bookColor == 'Marrom') {
         _books.add(element);
       }
     });
@@ -31,7 +32,7 @@ class ControllerAchitvement {
   getListBuooksRed() {
     List<Book> _books = [];
     items.forEach((element) {
-      if (element.bookColor == Colors.red) {
+      if (element.bookColor == 'Vermelho') {
         _books.add(element);
       }
     });
@@ -42,7 +43,7 @@ class ControllerAchitvement {
   getListBuooksBlue() {
     List<Book> _books = [];
     items.forEach((element) {
-      if (element.bookColor == Colors.blue) {
+      if (element.bookColor == 'Azul') {
         _books.add(element);
       }
     });
@@ -53,7 +54,7 @@ class ControllerAchitvement {
   getListBuooksPurple() {
     List<Book> _books = [];
     items.forEach((element) {
-      if (element.bookColor == Colors.purple) {
+      if (element.bookColor == 'Roxo') {
         _books.add(element);
       }
     });
@@ -64,7 +65,7 @@ class ControllerAchitvement {
   getListBuooksGold() {
     List<Book> _books = [];
     items.forEach((element) {
-      if (element.bookColor == Colors.yellow) {
+      if (element.bookColor == 'Gold') {
         _books.add(element);
         _books.add(element);
         _books.add(element);

@@ -6,204 +6,204 @@ class RepositoryBooks {
 
   getSistBuooks() {
     _itenms.add(Book(
-      bookNumber: 1,
-      bookColor: Colors.brown,
+      bookNumber: '1',
+      bookColor: 'Marrom',
       bookName: 'Livro  Bege',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 2,
-      bookColor: Colors.brown,
+      bookNumber: '2',
+      bookColor: 'Marrom',
       bookName: 'Livro  Bege',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 3,
-      bookColor: Colors.brown,
+      bookNumber: '3',
+      bookColor: 'Marrom',
       bookName: 'Livro  Bege',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 4,
-      bookColor: Colors.brown,
+      bookNumber: '4',
+      bookColor: 'Marrom',
       bookName: 'Livro  Bege',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 5,
-      bookColor: Colors.brown,
+      bookNumber: '5',
+      bookColor: 'Marrom',
       bookName: 'Livro  Bege',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 6,
-      bookColor: Colors.brown,
+      bookNumber: '6',
+      bookColor: 'Marrom',
       bookName: 'Livro  Bege',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 7,
-      bookColor: Colors.brown,
+      bookNumber: '7',
+      bookColor: 'Marrom',
       bookName: 'Livro  Bege',
       bookRead: true,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 8,
-      bookColor: Colors.red,
+      bookNumber: '8',
+      bookColor: 'Vermelho',
       bookName: 'Livro vermelho',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 11,
-      bookColor: Colors.red,
+      bookNumber: '11',
+      bookColor: 'Vermelho',
       bookName: 'Livro vermelho',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 14,
-      bookColor: Colors.red,
+      bookNumber: '14',
+      bookColor: 'Vermelho',
       bookName: 'Livro vermelho',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 17,
-      bookColor: Colors.red,
+      bookNumber: '17',
+      bookColor: 'Vermelho',
       bookName: 'Livro vermelho',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 20,
-      bookColor: Colors.red,
+      bookNumber: '20',
+      bookColor: 'Vermelho',
       bookName: 'Livro vermelho',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 23,
-      bookColor: Colors.red,
+      bookNumber: '23',
+      bookColor: 'Vermelho',
       bookName: 'Livro vermelho',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 26,
-      bookColor: Colors.red,
+      bookNumber: '26',
+      bookColor: 'Vermelho',
       bookName: 'Livro vermelho',
       bookRead: true,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 9,
-      bookColor: Colors.blue,
+      bookNumber: '9',
+      bookColor: 'Azul',
       bookName: 'Livro Azul',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 12,
-      bookColor: Colors.blue,
+      bookNumber: '12',
+      bookColor: 'Azul',
       bookName: 'Livro Azul',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 15,
-      bookColor: Colors.blue,
+      bookNumber: '15',
+      bookColor: 'Azul',
       bookName: 'Livro Azul',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 18,
-      bookColor: Colors.blue,
+      bookNumber: '18',
+      bookColor: 'Azul',
       bookName: 'Livro Azul',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 21,
-      bookColor: Colors.blue,
+      bookNumber: '21',
+      bookColor: 'Azul',
       bookName: 'Livro Azul',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 24,
-      bookColor: Colors.blue,
+      bookNumber: '24',
+      bookColor: 'Azul',
       bookName: 'Livro Azul',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 27,
-      bookColor: Colors.blue,
+      bookNumber: '27',
+      bookColor: 'Azul',
       bookName: 'Livro Azul',
       bookRead: true,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 10,
-      bookColor: Colors.purple,
+      bookNumber: '10',
+      bookColor: 'Roxo',
       bookName: 'Livro  Roxo',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 13,
-      bookColor: Colors.purple,
+      bookNumber: '13',
+      bookColor: 'Roxo',
       bookName: 'Livro  Roxo',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 16,
-      bookColor: Colors.purple,
+      bookNumber: '16',
+      bookColor: 'Roxo',
       bookName: 'Livro  Roxo',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 19,
-      bookColor: Colors.purple,
+      bookNumber: '19',
+      bookColor: 'Roxo',
       bookName: 'Livro  Roxo',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 22,
-      bookColor: Colors.purple,
+      bookNumber: '22',
+      bookColor: 'Roxo',
       bookName: 'Livro  Roxo',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 25,
-      bookColor: Colors.purple,
+      bookNumber: '25',
+      bookColor: 'Roxo',
       bookName: 'Livro  Roxo',
       bookRead: false,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 28,
-      bookColor: Colors.purple,
+      bookNumber: '28',
+      bookColor: 'Roxo',
       bookName: 'Livro  Roxo',
       bookRead: true,
       bookOpen: true,
     ));
     _itenms.add(Book(
-      bookNumber: 29,
-      bookColor: Colors.yellow,
+      bookNumber: '29',
+      bookColor: 'Gold',
       bookName: 'Livro  amarelo',
       bookRead: true,
       bookOpen: true,
