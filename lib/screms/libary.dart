@@ -11,11 +11,11 @@ class Libary extends StatefulWidget {
 }
 
 class _LibaryState extends State<Libary> {
-  List<Book> bookBrow = ControllerAchitvement().getSistBuooks()!;
-  List<Book> booksBlue = ControllerAchitvement().getSistBuooks()!;
-  List<Book> bookRed = ControllerAchitvement().getSistBuooks()!;
-  List<Book> bookPurple = ControllerAchitvement().getSistBuooks()!;
-  List<Book> booksGold = ControllerAchitvement().getSistBuooks()!;
+  List<Book> bookBrown = ControllerAchitvement().getListBuooksBrown()!;
+  List<Book> booksBlue = ControllerAchitvement().getListBuooksBlue()!;
+  List<Book> bookRed = ControllerAchitvement().getListBuooksRed()!;
+  List<Book> bookPurple = ControllerAchitvement().getListBuooksPurple()!;
+  List<Book> booksGold = ControllerAchitvement().getListBuooksGold()!;
 
   @override
   Widget build(BuildContext context) {
@@ -68,9 +68,9 @@ class _LibaryState extends State<Libary> {
             height: 150,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: bookBrow.length,
+                itemCount: bookBrown.length,
                 itemBuilder: (_, index) {
-                  return LiberyItem(bookBrow[index]);
+                  return LiberyItem(bookBrown[index]);
                 }),
           ),
         ],

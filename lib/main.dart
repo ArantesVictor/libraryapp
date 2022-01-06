@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Vamos Cozinhar?',
+      title: 'BibliotecaVitoriana',
       theme: ThemeData(
         primarySwatch: Colors.brown,
         canvasColor: Color.fromRGBO(254, 253, 253, 1),
