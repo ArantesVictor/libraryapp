@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:libraryapp/Routes/app_routes.dart';
 import 'package:libraryapp/screms/achivements_view.dart';
+import 'package:libraryapp/screms/block_red.dart';
 import 'package:libraryapp/screms/libary.dart';
 import 'package:libraryapp/screms/shelf_view.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.HOME: (ctx) => ShelfView(),
         AppRoutes.ACHIVEMENTS: (ctx) => AchivementsView(),
         AppRoutes.LIBARY: (ctx) => Libary(),
+        AppRoutes.BLOCKRED: (ctx) => BlockRed(),
       },
     );
   }

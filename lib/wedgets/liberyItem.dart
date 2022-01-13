@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:libraryapp/Routes/app_routes.dart';
 import 'package:libraryapp/controller/util_controller.dart';
 import 'package:libraryapp/models/book.dart';
 
@@ -27,7 +28,11 @@ class _LiberyItemState extends State<LiberyItem> {
             style:
                 DefaultTextStyle.of(context).style.apply(fontSizeFactor: 2.0),
           ),
-          onPressed: () {},
+          onPressed: () {
+            if (widget.book.bookColor == "Vermelho") {
+              Navigator.of(context).pushNamed(AppRoutes.BLOCKRED);
+            }
+          },
         ),
       ),
     );
