@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:libraryapp/controller/controller_achivement.dart';
+import 'package:libraryapp/controller/controller_library.dart';
 import 'package:libraryapp/models/book.dart';
 import 'package:libraryapp/wedgets/liberyItem.dart';
 
@@ -11,11 +12,11 @@ class Libary extends StatefulWidget {
 }
 
 class _LibaryState extends State<Libary> {
-  List<Book> bookBrown = ControllerAchitvement().getListBuooksBrown()!;
-  List<Book> booksBlue = ControllerAchitvement().getListBuooksBlue()!;
-  List<Book> bookRed = ControllerAchitvement().getListBuooksRed()!;
-  List<Book> bookPurple = ControllerAchitvement().getListBuooksPurple()!;
-  List<Book> booksGold = ControllerAchitvement().getListBuooksGold()!;
+  List<Book> bookBrown = ControllerLibrary().getListBuooksBrown()!;
+  List<Book> booksBlue = ControllerLibrary().getListBuooksBlue()!;
+  List<Book> bookRed = ControllerLibrary().getListBuooksRed()!;
+  List<Book> bookPurple = ControllerLibrary().getListBuooksPurple()!;
+  List<Book> booksGold = ControllerLibrary().getListBuooksGold()!;
 
   @override
   Widget build(BuildContext context) {

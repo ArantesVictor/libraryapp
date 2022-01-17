@@ -11,7 +11,7 @@ class AchivementsView extends StatefulWidget {
 }
 
 class _AchivementsViewState extends State<AchivementsView> {
-  List<Book> allBooks = ControllerAchitvement().getSistBuooks()!;
+  List<Book> allBooks = ControllerAchitvement().getOpenBooks()!;
 
   @override
   Widget build(BuildContext context) {
