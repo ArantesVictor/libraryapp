@@ -82,8 +82,11 @@ class ControllerLibrary {
   goToBook(BuildContext context, String? chosen) {
     this._selectedBookNumber = chosen;
     getBook();
-    if (_selectedBook!.bookColor == "Vermelho") {
+    if (_selectedBook!.bookColor == "Vermelho" && !_selectedBook!.blockOpen!) {
       Navigator.of(context).pushNamed(AppRoutes.BLOCKRED);
+    }
+    if (_selectedBook!.bookOpen!) {
+      Navigator.of(context).pushNamed(AppRoutes.BOOK);
     }
   }
 }

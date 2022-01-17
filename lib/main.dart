@@ -3,6 +3,8 @@ import 'package:libraryapp/Routes/app_routes.dart';
 import 'package:libraryapp/screms/achivements_view.dart';
 import 'package:libraryapp/screms/block_red.dart';
 import 'package:libraryapp/screms/libary.dart';
+import 'package:libraryapp/screms/open_book_view.dart';
+import 'package:libraryapp/screms/question_book_biew.dart';
 import 'package:libraryapp/screms/shelf_view.dart';
 
 void main() {
@@ -25,6 +27,8 @@ class MyApp extends StatelessWidget {
         AppRoutes.ACHIVEMENTS: (ctx) => AchivementsView(),
         AppRoutes.LIBARY: (ctx) => Libary(),
         AppRoutes.BLOCKRED: (ctx) => BlockRed(),
+        AppRoutes.BOOK: (ctx) => OpenBooView(),
+        AppRoutes.QUESTION: (ctx) => QuestionBookView(),
       },
     );
   }
