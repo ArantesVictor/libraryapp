@@ -8,7 +8,7 @@ class Book {
   String? bookName;
   bool? bookRead;
   bool? bookOpen;
-  bool? blockOpen = false;
+  bool? blockOpen;
   AllQuestions? questionBlock;
   AllQuestions? puzzle;
   ContentBook? content;
@@ -18,7 +18,7 @@ class Book {
     this.bookName,
     this.bookColor,
     this.bookRead,
-    this.bookOpen,
+    this.bookOpen = true,
     this.blockOpen,
     this.content,
     this.puzzle,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:libraryapp/wedgets/question_input.dart';
 import 'package:libraryapp/wedgets/question_options.dart';
 
 class BlockRed extends StatefulWidget {
@@ -16,7 +17,7 @@ class _BlockRedState extends State<BlockRed> {
         title: Text('Desafio do livro: '),
       ),
       body: Center(
-        child: QuestionOptions(),
+        child: QuestionInput(),
       ),
     );
   }

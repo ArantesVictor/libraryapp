@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:libraryapp/Routes/app_routes.dart';
 import 'package:libraryapp/models/book.dart';
 import 'package:libraryapp/repositoys/repository_books.dart';
 
 class ControllerLibrary {
   List<Book> _items = RepositoryBooks().getSistBuooks();
-  String? _selectedBookNumber;
-  Book? _selectedBook;
+  String? selectedBookNumber;
+  Book? selectedBook;
 
   getListBuooksBrown() {
     List<Book> _books = [];
@@ -71,22 +72,61 @@ class ControllerLibrary {
   }
 
   Book getBook() {
+    Book? chosenBook;
     _items.forEach((element) {
-      if (element.bookNumber == this._selectedBookNumber!) {
-        this._selectedBook = element;
+      if (element.bookNumber == this.selectedBookNumber!) {
+        chosenBook = element;
       }
     });
-    return _selectedBook!;
+
+    this.selectedBook = chosenBook;
+
+    return chosenBook!;
   }
 
   goToBook(BuildContext context, String? chosen) {
-    this._selectedBookNumber = chosen;
-    getBook();
-    if (_selectedBook!.bookColor == "Vermelho" && !_selectedBook!.blockOpen!) {
+    this.selectedBookNumber = chosen;
+    this.selectedBook = getBook();
+    if (selectedBook!.bookColor == "Vermelho") {
+      //&& _selectedBook!.blockOpen
       Navigator.of(context).pushNamed(AppRoutes.BLOCKRED);
-    }
-    if (_selectedBook!.bookOpen!) {
+    } else if (selectedBook!.bookOpen!) {
       Navigator.of(context).pushNamed(AppRoutes.BOOK);
     }
   }
+
+  openBookRed(BuildContext context, String? chosen) {
+    print("----------------------");
+    print('_selectedBookNumber');
+    print(selectedBookNumber);
+    print('_selectedBook');
+    print(selectedBook);
+  }
+
+/*
+
+
+  openBookRed(BuildContext context, String? chosen) {
+    print("----------------------");
+    print('_selectedBookNumber');
+    print(_selectedBookNumber);
+    print('_selectedBook');
+    print(_selectedBook);
+    print('_selectedBook!.questionBlock!.answerr');
+    print(_selectedBook!.questionBlock!.answerr);
+
+    _items.forEach((element) {
+      if (element.bookNumber == this._selectedBookNumber!) {
+        element.blockOpen = false;
+      }
+    });
+
+    if (chosen == _selectedBook!.questionBlock!.answerr) {
+      Navigator.of(context).pop();
+      goToBook(context, _selectedBook!.bookNumber);
+    }
+  }
+
+
+  */
 }

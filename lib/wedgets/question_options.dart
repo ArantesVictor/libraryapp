@@ -83,7 +83,7 @@ class _QuestionOptionsState extends State<QuestionOptions> {
           title: Text('Opicaço 4'),
         ),
         ElevatedButton(
-          child: Text('Entre na Biblioteca'),
+          child: Text('Confirmar'),
           onPressed: () {
             if (_optionSelected == '1') {
               //Navigator.of(context).pushNamed(AppRoutes.LIBARY);

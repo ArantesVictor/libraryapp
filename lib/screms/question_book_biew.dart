@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:libraryapp/wedgets/question_options.dart';
 
 class QuestionBookView extends StatefulWidget {
   const QuestionBookView({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class _QuestionBookViewState extends State<QuestionBookView> {
         title: Text("Question book"),
       ),
       body: Center(
-        child: CircularProgressIndicator.adaptive(),
+        child: QuestionOptions(),
       ),
     );
   }
