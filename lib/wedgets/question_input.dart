@@ -9,7 +9,7 @@ class QuestionInput extends StatefulWidget {
 }
 
 class _QuestionInputState extends State<QuestionInput> {
-  // final _answerController = TextEditingController();
+  final _answerController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -19,18 +19,18 @@ class _QuestionInputState extends State<QuestionInput> {
         children: [
           Text("Questao a ser respondida"),
           SizedBox(height: 10),
-          /* TextField(
+          TextField(
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               hintText: 'Enter somente com os numeros ou letras',
             ),
             controller: _answerController,
-          ),*/
+          ),
           SizedBox(height: 10),
           ElevatedButton(
             child: Text('Confirmar'),
             onPressed: () {
-              ControllerLibrary().openBookRed(context, '1');
+              ControllerLibrary().openBookRed(context, _answerController.text);
             },
           ),
         ],
