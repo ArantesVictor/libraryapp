@@ -5,14 +5,14 @@ import 'package:libraryapp/models/book.dart';
 import 'package:libraryapp/repositoys/repository_books.dart';
 
 class ControllerLibrary {
-  List<Book> _items = RepositoryBooks().getSistBuooks();
+  final List<Book>? _items = RepositoryBooks().getListBooks();
   String? selectedBookNumber;
   Book? selectedBook;
 
   getListBuooksBrown() {
     List<Book> _books = [];
 
-    _items.forEach((element) {
+    _items!.forEach((element) {
       if (element.bookColor == 'Marrom') {
         _books.add(element);
       }
@@ -23,7 +23,7 @@ class ControllerLibrary {
 
   getListBuooksRed() {
     List<Book> _books = [];
-    _items.forEach((element) {
+    _items!.forEach((element) {
       if (element.bookColor == 'Vermelho') {
         _books.add(element);
       }
@@ -34,7 +34,7 @@ class ControllerLibrary {
 
   getListBuooksBlue() {
     List<Book> _books = [];
-    _items.forEach((element) {
+    _items!.forEach((element) {
       if (element.bookColor == 'Azul') {
         _books.add(element);
       }
@@ -45,7 +45,7 @@ class ControllerLibrary {
 
   getListBuooksPurple() {
     List<Book> _books = [];
-    _items.forEach((element) {
+    _items!.forEach((element) {
       if (element.bookColor == 'Roxo') {
         _books.add(element);
       }
@@ -56,7 +56,7 @@ class ControllerLibrary {
 
   getListBuooksGold() {
     List<Book> _books = [];
-    _items.forEach((element) {
+    _items!.forEach((element) {
       if (element.bookColor == 'Gold') {
         _books.add(element);
         _books.add(element);
@@ -73,7 +73,7 @@ class ControllerLibrary {
 
   Book getBook() {
     Book? chosenBook;
-    _items.forEach((element) {
+    _items!.forEach((element) {
       if (element.bookNumber == this.selectedBookNumber!) {
         chosenBook = element;
       }

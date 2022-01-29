@@ -1,10 +1,19 @@
-import 'package:flutter/material.dart';
 import 'package:libraryapp/models/book.dart';
 
 class RepositoryBooks {
-  List<Book> _itenms = [];
+  static final RepositoryBooks _instance = RepositoryBooks._initData();
 
-  getSistBuooks() {
+  factory RepositoryBooks() {
+    return _instance;
+  }
+
+  final List<Book> _itenms = [];
+
+  getListBooks() {
+    return [..._itenms];
+  }
+
+  RepositoryBooks._initData() {
     _itenms.add(Book(
       bookNumber: '1',
       bookColor: 'Marrom',
@@ -208,7 +217,5 @@ class RepositoryBooks {
       bookRead: true,
       bookOpen: true,
     ));
-
-    return _itenms;
   }
 }
